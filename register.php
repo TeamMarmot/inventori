@@ -19,16 +19,16 @@ $mylinkedin=$_POST['mylinkedin'];
 $mytwitter=$_POST['mytwitter']; 
 
 $myusername = stripslashes($myusername);
-$myfirstname=$stripslashes($myfirstname);
-$mylastname=$stripslashes($mylastname); 
-$mytwitch=$stripslashes($mytwitch); 
-$mylinkedin=$stripslashes($mylinkedin); 
-$mytwitter=$stripslashes($mytwitter); 
+$myfirstname=stripslashes($myfirstname);
+$mylastname=stripslashes($mylastname); 
+$mytwitch=stripslashes($mytwitch); 
+$mylinkedin=stripslashes($mylinkedin); 
+$mytwitter=stripslashes($mytwitter); 
 $myusername = mysql_real_escape_string($myusername);
-$mylastname=$mysql_real_escape_string['mylastname']; 
-$mytwitch=$mysql_real_escape_string['mytwitch']; 
-$mylinkedin=$mysql_real_escape_string['mylinkedin']; 
-$mytwitter=$mysql_real_escape_string['mytwitter']; 
+$mylastname=mysql_real_escape_string['mylastname']; 
+$mytwitch=mysql_real_escape_string['mytwitch']; 
+$mylinkedin=mysql_real_escape_string['mylinkedin']; 
+$mytwitter=mysql_real_escape_string['mytwitter']; 
 $sql="INSERT INTO [dbo].[UserAccount] VALUES ($mytwitter,$mylinkedin,null,$mytwitch,$myfirstname,$mylastname";
 
 header("location:www.welcometothethunderdo.me");
