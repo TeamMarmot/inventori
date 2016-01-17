@@ -1,6 +1,6 @@
 <?php
 
-set_time_limit(30);
+set_time_limit(300);
 
 $host="marmot.database.windows.net,1433"; // Host name 
 $username="marmot@marmot"; // Mysql username 
