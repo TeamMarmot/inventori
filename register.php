@@ -6,7 +6,7 @@ $password="Cantsee123"; // Mysql password
 $db_name="marmot"; // Database name 
 $tbl_name="[dbo].[UserAccount]"; // Table name 
 $connectionOptions = array("Database"=>$db_name, "Uid"=>$username, "PWD"=>$password)
-// sqlsrv_connect("$host", conectionOptions)or die("cannot connect"); 
+sqlsrv_connect("$host", conectionOptions)or die("cannot connect"); 
 
 
 // $myusername=$_POST['myusername']; 
