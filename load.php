@@ -2,7 +2,7 @@
 
 $host="marmot.database.windows.net"; // Host name 
 $username=""; // Mysql username 
-$password=""; // Mysql password 
+$password="Cantsee123"; // Mysql password 
 $db_name="marmot"; // Database name 
 $tbl_name="[dbo].[UserAccount]"; // Table name 
 
