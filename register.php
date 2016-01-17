@@ -1,7 +1,7 @@
 <?php
 
-$host="marmot.database.windows.net"; // Host name 
-$username=""; // Mysql username 
+$host="marmot.database.windows.net,1433"; // Host name 
+$username="marmot@marmot"; // Mysql username 
 $password="Cantsee123"; // Mysql password 
 $db_name="marmot"; // Database name 
 $tbl_name="[dbo].[UserAccount]"; // Table name 
