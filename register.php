@@ -7,7 +7,7 @@ $db_name="marmot"; // Database name
 $tbl_name="[dbo].[UserAccount]"; // Table name 
 $connectionOptions = array("Database"=>$db_name, "Uid"=>$username, "PWD"=>$password)
 sqlsrv_connect("$host", conectionOptions)or die("cannot connect"); 
-mysql_select_db("$db_name")or die("cannot select DB");
+
 
 $myusername=$_POST['myusername']; 
 $myfirstname=$_POST['myfirstname']; 
