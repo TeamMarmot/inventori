@@ -1,14 +1,12 @@
 <?php
 
-set_time_limit(300);
-
-$host="marmot.database.windows.net,1433"; // Host name 
-$username="marmot@marmot"; // Mysql username 
-$password="Cantsee123"; // Mysql password 
-$db_name="marmot"; // Database name 
-$tbl_name="[dbo].[UserAccount]"; // Table name 
-$connectionOptions = array("Database"=>$db_name, "Uid"=>$username, "PWD"=>$password)
-sqlsrv_connect("$host", conectionOptions)or die("cannot connect"); 
+// $host="marmot.database.windows.net,1433"; // Host name 
+// $username="marmot@marmot"; // Mysql username 
+// $password="Cantsee123"; // Mysql password 
+// $db_name="marmot"; // Database name 
+// $tbl_name="[dbo].[UserAccount]"; // Table name 
+// $connectionOptions = array("Database"=>$db_name, "Uid"=>$username, "PWD"=>$password)
+// sqlsrv_connect("$host", conectionOptions)or die("cannot connect"); 
 
 
 // $myusername=$_POST['myusername']; 
