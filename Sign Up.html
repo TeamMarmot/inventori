@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html
+
+<head>
+	<title>Sign up :D</title>
+
+</head>
+<body>
+
+  	<?php
+
+  	function OpenConnection()
+{
+    try
+    {
+        $serverName = "marmot.database.windows.net";
+        $connectionOptions = array("dbo.IdeaTables" => "dbo.IdeaTables",
+            "Uid"=>"MyUser", "PWD"=>"MyPassword");
+        $conn = sqlsrv_connect($serverName, $connectionOptions);
+        if($conn == false)
+            die(FormatErrors(sqlsrv_errors()));
+    }
+    catch(Exception $e)
+    {
+        echo("Error!");
+    }
+}
+
+
+  	?>
+
+
+	<h1> Sign Up!</h1>
+	<form>
+	User Name:<br>
+	<input type="text" name = "UserID"><br>
+	First name:<br>
+	<input type="text" name="firstname"><br>
+  	Last name:<br>
+  	<input type="text" name="lastname"><br>
+  	Twitch:<br>
+  	<input type="text" name="twitch"><br>
+	Linked In:<br>
+  	<input type="text" name="twitch"><br>
+  	Twitter:<br>
+  	<input type="text" name="twitch">
+<div>
+
+  	<div>
+	<a href="http://www.welcometothethunderdo.me/" class="button">Go to main</a>
+	</div>
+
+</body>
+</html>           
