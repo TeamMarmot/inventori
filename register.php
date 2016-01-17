@@ -1,8 +1,6 @@
 <?php
 header("location:www.welcometothethunderdo.me");
 
-set_time_limit(300);
-
 $host="marmot.database.windows.net,1433"; // Host name 
 $username="marmot@marmot"; // Mysql username 
 $password="Cantsee123"; // Mysql password 
@@ -12,6 +10,7 @@ $connectionOptions = array("Database"=>$db_name, "Uid"=>$username, "PWD"=>$passw
 sqlsrv_connect("$host", conectionOptions)or die("cannot connect"); 
 
 
+<<<<<<< HEAD
 $myusername=$_POST['myusername']; 
 $myfirstname=$_POST['myfirstname']; 
 $mylastname=$_POST['mylastname']; 
@@ -33,6 +32,29 @@ $mytwitter=$mysql_real_escape_string['mytwitter'];
 $sql="INSERT INTO [dbo].[UserAccount] VALUES ($mytwitter,$mylinkedin,null,$mytwitch,$myfirstname,$mylastname";
 
 
+=======
+// $myusername=$_POST['myusername']; 
+// $myfirstname=$_POST['myfirstname']; 
+// $mylastname=$_POST['mylastname']; 
+// $mytwitch=$_POST['mytwitch']; 
+// $mylinkedin=$_POST['mylinkedin']; 
+// $mytwitter=$_POST['mytwitter']; 
+
+// $myusername = stripslashes($myusername);
+// $myfirstname=stripslashes($myfirstname);
+// $mylastname=stripslashes($mylastname); 
+// $mytwitch=stripslashes($mytwitch); 
+// $mylinkedin=stripslashes($mylinkedin); 
+// $mytwitter=stripslashes($mytwitter); 
+// $myusername = mysql_real_escape_string($myusername);
+// $mylastname=mysql_real_escape_string['mylastname']; 
+// $mytwitch=mysql_real_escape_string['mytwitch']; 
+// $mylinkedin=mysql_real_escape_string['mylinkedin']; 
+// $mytwitter=mysql_real_escape_string['mytwitter']; 
+// $sql="INSERT INTO [dbo].[UserAccount] VALUES ($mytwitter,$mylinkedin,null,$mytwitch,$myfirstname,$mylastname";
+
+// header("location:www.welcometothethunderdo.me");
+>>>>>>> a3da9034e203ad41879639c334c8c02a4a97c80f
 
 /*
 // Mysql_num_row is counting table row
@@ -50,4 +72,4 @@ else {
 echo "Wrong Username or Password";
 }
 */
-?>
+?>hello world
