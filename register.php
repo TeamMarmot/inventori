@@ -29,7 +29,7 @@ $mylinkedin=$mysql_real_escape_string['mylinkedin'];
 $mytwitter=$mysql_real_escape_string['mytwitter']; 
 $sql="INSERT INTO [dbo].[UserAccount] VALUES ($mytwitter,$mylinkedin,null,$mytwitch,$myfirstname,$mylastname";
 
-header("location:index.html");
+header("location:www.welcometothethunderdo.me");
 
 /*
 // Mysql_num_row is counting table row
