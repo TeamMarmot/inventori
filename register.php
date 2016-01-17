@@ -28,7 +28,8 @@ $mytwitch=$mysql_real_escape_string['mytwitch'];
 $mylinkedin=$mysql_real_escape_string['mylinkedin']; 
 $mytwitter=$mysql_real_escape_string['mytwitter']; 
 $sql="INSERT INTO [dbo].[UserAccount] VALUES ($mytwitter,$mylinkedin,null,$mytwitch,$myfirstname,$mylastname";
-$result=mysql_query($sql);
+
+header("location:index.html");
 
 /*
 // Mysql_num_row is counting table row
