@@ -4,7 +4,7 @@ $host="marmot.database.windows.net"; // Host name
 $username="marmot"; // Mysql username 
 $password="Cantsee123"; // Mysql password 
 $db_name="marmot"; // Database name 
-$tbl_name="UserAccount"; // Table name 
+$tbl_name="[dbo].[UserAccount]"; // Table name 
 
 mysql_connect("$host", "$username", "$password")or die("cannot connect"); 
 mysql_select_db("$db_name")or die("cannot select DB");
